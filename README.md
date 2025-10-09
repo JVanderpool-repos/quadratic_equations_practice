@@ -2,7 +2,8 @@
 
 An interactive web application for practicing quadratic equation solving. This educational tool generates random quadratic equations with integer roots and provides an intuitive interface for students to practice finding solutions.
 
-![Quadratic Equation Solver Screenshot](https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Quadratic+Equation+Solver)
+<!-- Screenshot will be added after deployment -->
+*A clean, modern interface for practicing quadratic equations with real-time feedback and progressive hints.*
 
 ## 🌟 Features
 
@@ -16,7 +17,7 @@ An interactive web application for practicing quadratic equation solving. This e
 
 ## 🚀 Demo
 
-[Live Demo](https://your-username.github.io/quadratic-equations-practice) *(Update with your GitHub Pages URL)*
+[Live Demo](https://JVanderpool-repos.github.io/quadratic-equations-practice)
 
 ## 📚 Educational Value
 
@@ -40,7 +41,7 @@ This tool helps students:
 ### Option 1: Direct Download
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/quadratic-equations-practice.git
+   git clone https://github.com/JVanderpool-repos/quadratic-equations-practice.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -118,7 +119,7 @@ Contributions are welcome! Here are some ways you can help:
 ### Development Setup
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/quadratic-equations-practice.git
+git clone https://github.com/JVanderpool-repos/quadratic-equations-practice.git
 
 # Create a branch for your feature
 git checkout -b feature/your-feature-name
@@ -149,9 +150,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: your.email@example.com
+**JVanderpool-repos**
+- GitHub: [@JVanderpool-repos](https://github.com/JVanderpool-repos)
+- Project: [Quadratic Equations Practice](https://github.com/JVanderpool-repos/quadratic-equations-practice)
 
 ## 🙏 Acknowledgments
 
@@ -161,10 +162,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Statistics
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/quadratic-equations-practice)
-![GitHub stars](https://img.shields.io/github/stars/your-username/quadratic-equations-practice)
-![GitHub forks](https://img.shields.io/github/forks/your-username/quadratic-equations-practice)
-![GitHub issues](https://img.shields.io/github/issues/your-username/quadratic-equations-practice)
+![GitHub repo size](https://img.shields.io/github/repo-size/JVanderpool-repos/quadratic-equations-practice)
+![GitHub stars](https://img.shields.io/github/stars/JVanderpool-repos/quadratic-equations-practice)
+![GitHub forks](https://img.shields.io/github/forks/JVanderpool-repos/quadratic-equations-practice)
+![GitHub issues](https://img.shields.io/github/issues/JVanderpool-repos/quadratic-equations-practice)
 
 ---
 

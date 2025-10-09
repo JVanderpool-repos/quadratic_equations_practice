@@ -7,7 +7,7 @@ Thank you for your interest in contributing to this educational project! This gu
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/your-username/quadratic-equations-practice.git
+   git clone https://github.com/JVanderpool-repos/quadratic-equations-practice.git
    cd quadratic-equations-practice
    ```
 3. **Create a new branch** for your feature:
