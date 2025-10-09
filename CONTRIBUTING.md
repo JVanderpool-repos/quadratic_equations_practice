@@ -1,102 +1,78 @@
 # Contributing to Quadratic Equations Practice
 
-Thank you for your interest in contributing to this educational project! This guide will help you get started.
+Thank you for your interest in improving this educational tool! This is a simple project designed to help students practice quadratic equations.
 
-## 🚀 Quick Start
+## 🚀 How to Contribute
 
-1. **Fork the repository** on GitHub
-2. **Clone your fork** locally:
+### 🐛 Found a Bug?
+1. Check if it's already reported in [Issues](https://github.com/JVanderpool-repos/quadratic-equations-practice/issues)
+2. If not, create a new issue describing:
+   - What you expected to happen
+   - What actually happened
+   - Steps to reproduce the problem
+   - Your browser and operating system
+
+### 💡 Have an Idea?
+1. Open an issue to discuss your idea first
+2. Focus on educational value - will this help students learn better?
+3. Keep it simple - this tool is meant to be straightforward
+
+### 🔧 Want to Make Changes?
+1. **Fork** the repository
+2. **Clone** your fork:
    ```bash
-   git clone https://github.com/JVanderpool-repos/quadratic-equations-practice.git
-   cd quadratic-equations-practice
+   git clone https://github.com/YOUR-USERNAME/quadratic-equations-practice.git
    ```
-3. **Create a new branch** for your feature:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-4. **Make your changes** and test them
-5. **Commit your changes**:
-   ```bash
-   git add .
-   git commit -m "Add: brief description of your changes"
-   ```
-6. **Push to your fork**:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-7. **Create a Pull Request** on GitHub
+3. **Make your changes** in the appropriate files:
+   - `index.html` - Main page structure
+   - `assets/css/style.css` - Styling
+   - `assets/js/app.js` - Application logic
+4. **Test your changes** by opening `index.html` in a browser
+5. **Create a Pull Request** with a clear description of what you changed
 
-## 🎯 How You Can Contribute
+## 🎯 What Kind of Contributions Are Helpful?
 
-### 🐛 Bug Reports
-- Check existing issues first
-- Use the bug report template
-- Include steps to reproduce
-- Mention browser and version
+### Educational Improvements
+- Better hint messages
+- Clearer error explanations
+- More intuitive user interface
+- Accessibility improvements
 
-### ✨ Feature Requests
-- Check if similar features have been requested
-- Explain the educational value
-- Provide use cases
-- Consider the target audience (students learning algebra)
+### Technical Improvements
+- Bug fixes
+- Performance optimizations
+- Mobile responsiveness improvements
+- Code organization
 
-### 💻 Code Contributions
-- **Educational Features**: New problem types, difficulty levels, learning aids
-- **UI/UX Improvements**: Better accessibility, mobile responsiveness, animations
-- **Performance**: Optimization, code quality improvements
-- **Documentation**: Code comments, README updates, tutorials
+### Simple Feature Ideas
+- Different difficulty levels
+- Better visual feedback
+- Keyboard shortcuts
+- Sound effects (optional)
 
-### 📚 Educational Content
-- **Hints and Explanations**: Better mathematical explanations
-- **Learning Resources**: Links to educational materials
-- **Accessibility**: Screen reader compatibility, keyboard navigation
+## 🧪 Testing Your Changes
 
-## 🛠️ Development Setup
+Before submitting:
+- [ ] Open `index.html` in your browser
+- [ ] Try solving several problems correctly
+- [ ] Try entering wrong answers to test hints
+- [ ] Test on mobile if possible
+- [ ] Make sure keyboard navigation works (Tab, Enter)
 
-### Prerequisites
-- A modern web browser
-- Text editor (VS Code recommended)
-- Optional: Node.js for development server
+## 📝 Keep It Simple
 
-### Local Development
-```bash
-# Option 1: Simple HTTP server (Python)
-python -m http.server 8000
+This is an educational tool, not a complex application. When contributing:
+- **Focus on learning**: Will this help students understand quadratic equations better?
+- **Keep it lightweight**: Avoid adding heavy libraries or complex features
+- **Maintain clarity**: The interface should remain clean and easy to use
 
-# Option 2: Node.js live server (install first)
-npm install -g live-server
-live-server --port=3000
+## 📄 License
 
-# Option 3: Use the package.json scripts
-npm install
-npm start
-```
+By contributing, you agree that your contributions will be licensed under the MIT License.
 
-### Project Structure
-```
-quadratic-equations-practice/
-├── index.html              # Main HTML file
-├── assets/
-│   ├── css/
-│   │   └── style.css       # Custom styles
-│   └── js/
-│       └── app.js          # Main application logic
-├── .github/
-│   └── workflows/
-│       └── deploy.yml      # GitHub Actions deployment
-├── README.md               # Project documentation
-├── CONTRIBUTING.md         # This file
-├── LICENSE                 # MIT license
-├── package.json            # Project metadata
-└── .gitignore             # Git ignore rules
-```
+---
 
-## 📋 Coding Guidelines
-
-### JavaScript
-- Use modern ES6+ features
-- Follow camelCase naming convention
-- Add JSDoc comments for functions
+Thanks for helping make math learning more accessible! 🎓
 - Keep functions focused and small
 - Use meaningful variable names
 

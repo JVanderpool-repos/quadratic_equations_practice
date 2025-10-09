@@ -2,9 +2,6 @@
 
 An interactive web application for practicing quadratic equation solving. This educational tool generates random quadratic equations with integer roots and provides an intuitive interface for students to practice finding solutions.
 
-<!-- Screenshot will be added after deployment -->
-*A clean, modern interface for practicing quadratic equations with real-time feedback and progressive hints.*
-
 ## 🌟 Features
 
 - **Random Problem Generation**: Automatically generates quadratic equations with integer roots
@@ -36,9 +33,12 @@ This tool helps students:
 - **Tailwind CSS**: Modern styling framework
 - **Google Fonts**: Inter font family for better readability
 
-## 📦 Installation
+## 📦 How to Use
 
-### Option 1: Direct Download
+### Online (Recommended)
+Simply visit the [live demo](https://JVanderpool-repos.github.io/quadratic-equations-practice) - no installation needed!
+
+### Local Development
 1. Clone this repository:
    ```bash
    git clone https://github.com/JVanderpool-repos/quadratic-equations-practice.git
@@ -48,16 +48,6 @@ This tool helps students:
    cd quadratic-equations-practice
    ```
 3. Open `index.html` in your web browser
-
-### Option 2: Live Server (Recommended for Development)
-1. Install a live server extension in VS Code or use Node.js live-server:
-   ```bash
-   npm install -g live-server
-   live-server
-   ```
-
-### Option 3: GitHub Pages
-This project is configured for GitHub Pages deployment. Simply fork the repository and enable Pages in your repository settings.
 
 ## 🎯 Usage
 
@@ -87,64 +77,19 @@ The relationship used:
 
 ## 🎨 Customization
 
-### Difficulty Levels
-To modify the difficulty, adjust the root generation in `script.js`:
+To modify the difficulty, adjust the root generation in `assets/js/app.js`:
 ```javascript
 // Current: roots between -10 and 10
-root1 = Math.floor(Math.random() * 21) - 10;
+this.root1 = Math.floor(Math.random() * 21) - 10;
 
 // Easy: roots between -5 and 5
-root1 = Math.floor(Math.random() * 11) - 5;
+this.root1 = Math.floor(Math.random() * 11) - 5;
 
 // Hard: roots between -20 and 20
-root1 = Math.floor(Math.random() * 41) - 20;
+this.root1 = Math.floor(Math.random() * 41) - 20;
 ```
 
-### Styling
-The project uses Tailwind CSS. Modify classes in `index.html` or add custom CSS for personalization.
-
-## 🤝 Contributing
-
-Contributions are welcome! Here are some ways you can help:
-
-1. **Bug Reports**: Found a bug? Please open an issue
-2. **Feature Requests**: Have an idea? We'd love to hear it
-3. **Code Contributions**: 
-   - Fork the repository
-   - Create a feature branch (`git checkout -b feature/amazing-feature`)
-   - Commit your changes (`git commit -m 'Add amazing feature'`)
-   - Push to the branch (`git push origin feature/amazing-feature`)
-   - Open a Pull Request
-
-### Development Setup
-```bash
-# Clone your fork
-git clone https://github.com/JVanderpool-repos/quadratic-equations-practice.git
-
-# Create a branch for your feature
-git checkout -b feature/your-feature-name
-
-# Make your changes and test
-# ...
-
-# Commit and push
-git add .
-git commit -m "Description of your changes"
-git push origin feature/your-feature-name
-```
-
-## 📝 Future Enhancements
-
-- [ ] Multiple difficulty levels
-- [ ] Complex number roots
-- [ ] Graphical visualization of parabolas
-- [ ] Step-by-step solution explanations
-- [ ] User accounts and progress tracking
-- [ ] Leaderboard system
-- [ ] Multiple equation types (cubic, etc.)
-- [ ] Mobile app version
-
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -153,19 +98,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **JVanderpool-repos**
 - GitHub: [@JVanderpool-repos](https://github.com/JVanderpool-repos)
 - Project: [Quadratic Equations Practice](https://github.com/JVanderpool-repos/quadratic-equations-practice)
-
-## 🙏 Acknowledgments
-
-- [Tailwind CSS](https://tailwindcss.com/) for the styling framework
-- [Google Fonts](https://fonts.google.com/) for the Inter font family
-- Educational mathematics community for inspiration
-
-## 📊 Project Statistics
-
-![GitHub repo size](https://img.shields.io/github/repo-size/JVanderpool-repos/quadratic-equations-practice)
-![GitHub stars](https://img.shields.io/github/stars/JVanderpool-repos/quadratic-equations-practice)
-![GitHub forks](https://img.shields.io/github/forks/JVanderpool-repos/quadratic-equations-practice)
-![GitHub issues](https://img.shields.io/github/issues/JVanderpool-repos/quadratic-equations-practice)
 
 ---
 
