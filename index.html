@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Solver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div id="app-container" class="bg-white rounded-2xl shadow-lg p-6 md:p-8 w-full max-w-lg text-center">
+        <!-- Header Section -->
+        <h1 class="text-3xl font-bold text-gray-800">Quadratic Solver</h1>
+        <p class="text-gray-500 mt-2 mb-6">Find the roots of the quadratic equation.</p>
+
+        <!-- Equation Display -->
+        <div id="equation-display" class="w-full h-20 flex items-center justify-center bg-gray-100 border-2 border-gray-200 rounded-lg my-6">
+            <p class="text-3xl font-mono tracking-wider text-gray-800"></p>
+        </div>
+
+        <!-- User Input Section -->
+        <div class="flex items-center justify-center space-x-6">
+            <div class="flex items-center space-x-2">
+                <label for="x1-input" class="text-2xl font-semibold text-gray-600">x₁ =</label>
+                <input type="number" id="x1-input" class="text-2xl font-bold w-24 h-20 text-center border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+            </div>
+            <div class="flex items-center space-x-2">
+                 <label for="x2-input" class="text-2xl font-semibold text-gray-600">x₂ =</label>
+                <input type="number" id="x2-input" class="text-2xl font-bold w-24 h-20 text-center border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+            </div>
+        </div>
+
+        <!-- Action Button -->
+        <button id="check-button" class="w-full bg-indigo-600 text-white font-bold py-4 rounded-lg mt-8 text-lg hover:bg-indigo-700 active:scale-95 transition-transform duration-150 shadow-md">
+            Check Answer
+        </button>
+
+        <!-- Feedback Message Area -->
+        <div id="feedback" class="mt-6 h-8 text-xl font-semibold">
+            <!-- Feedback will appear here -->
+        </div>
+
+        <!-- Hint Area -->
+        <div id="hint" class="mt-4 text-lg text-blue-600">
+            <!-- Hints and explanations will appear here -->
+        </div>
+        <div class="mt-4 text-gray-500">
+            Score: <span id="score" class="font-bold">0</span>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
