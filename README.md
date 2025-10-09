@@ -14,7 +14,9 @@ An interactive web application for practicing quadratic equation solving. This e
 
 ## 🚀 Demo
 
-[Live Demo](https://JVanderpool-repos.github.io/quadratic-equations-practice)
+**[🎮 Try the Live Demo →](https://jvanderpool-repos.github.io/quadratic_equations_practice/)**
+
+*Practice solving quadratic equations right in your browser!*
 
 ## 📚 Educational Value
 
@@ -36,7 +38,7 @@ This tool helps students:
 ## 📦 How to Use
 
 ### Online (Recommended)
-Simply visit the [live demo](https://JVanderpool-repos.github.io/quadratic-equations-practice) - no installation needed!
+Simply visit the **[live demo](https://jvanderpool-repos.github.io/quadratic_equations_practice/)** - no installation needed!
 
 ### Local Development
 1. Clone this repository:
