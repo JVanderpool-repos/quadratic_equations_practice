@@ -21,9 +21,9 @@ class SlopeInterceptSolver {
         this.score = 0;
         this.attempts = 0;
         this.hints = [
-            "Hint: In y = mx + b, m is the slope and b is the y-intercept.",
-            "Hint: The slope (m) tells you the rise over run.",
-            "Hint: The y-intercept (b) is where the line crosses the y-axis."
+            "Hint: Look for the number in front of x - that's your slope (m). If there's just x, the slope is 1; if it's -x, the slope is -1.",
+            "Hint: The y-intercept (b) is the number being added or subtracted at the end of the equation. If there's no number at the end, b = 0.",
+            "Hint: In the equation y = mx + b, first find m (slope) before x, then find b (the constant term)."
         ];
     }
 
