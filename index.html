@@ -63,8 +63,9 @@
 
     <script src="assets/js/slope-intercept.js"></script>
     <script src="assets/js/app.js"></script>
-    <script>
-        // Initialize the problem manager
+    <script defer>
+        // Wait for DOM content to load
+        document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('DOMContentLoaded', () => {
             let currentSolver = new QuadraticSolver();
             currentSolver.init();
