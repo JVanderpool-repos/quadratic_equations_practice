@@ -32,7 +32,43 @@ class SlopeInterceptSolver {
      */
     init() {
         this.setupUI();
+        this.setupEventListeners();
         this.generateProblem();
+    }
+
+    /**
+     * Set up event listeners
+     */
+    setupEventListeners() {
+        this.checkButton.addEventListener('click', () => this.checkAnswer());
+        
+        this.x1Input.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                this.x2Input.focus();
+            }
+        });
+
+        this.x2Input.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                this.checkAnswer();
+            }
+        });
+
+        // Add input validation
+        [this.x1Input, this.x2Input].forEach(input => {
+            input.addEventListener('input', (e) => this.validateInput(e.target));
+        });
+    }
+
+    /**
+     * Validate numeric input
+     */
+    validateInput(input) {
+        const value = input.value;
+        // Allow negative numbers and integers
+        if (value && !/^-?\d*$/.test(value)) {
+            input.value = value.slice(0, -1);
+        }
     }
 
     /**
