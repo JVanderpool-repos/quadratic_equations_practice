@@ -69,8 +69,29 @@
             let currentSolver = new QuadraticSolver();
             currentSolver.init();
 
+            const problemTypeSelect = document.getElementById('problem-type');
+            
+            // Remove any existing event listeners by cloning and replacing the element
+            const cleanupEventListeners = () => {
+                const oldCheckButton = document.getElementById('check-button');
+                const newCheckButton = oldCheckButton.cloneNode(true);
+                oldCheckButton.parentNode.replaceChild(newCheckButton, oldCheckButton);
+
+                const oldX1Input = document.getElementById('x1-input');
+                const newX1Input = oldX1Input.cloneNode(true);
+                oldX1Input.parentNode.replaceChild(newX1Input, oldX1Input);
+
+                const oldX2Input = document.getElementById('x2-input');
+                const newX2Input = oldX2Input.cloneNode(true);
+                oldX2Input.parentNode.replaceChild(newX2Input, oldX2Input);
+            };
+
             // Handle problem type switching
-            document.getElementById('problem-type').addEventListener('change', (e) => {
+            problemTypeSelect.addEventListener('change', (e) => {
+                // Clean up old event listeners
+                cleanupEventListeners();
+
+                // Initialize new solver
                 if (e.target.value === 'quadratic') {
                     currentSolver = new QuadraticSolver();
                 } else {
