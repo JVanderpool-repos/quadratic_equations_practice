@@ -1,14 +1,15 @@
-# Quadratic Equation Solver
+# Math Problem Practice
 
-An interactive web application for practicing quadratic equation solving. This educational tool generates random quadratic equations with integer roots and provides an intuitive interface for students to practice finding solutions.
+An interactive web application for practicing mathematical concepts. This educational tool supports both quadratic equations and slope-intercept form problems, providing an intuitive interface for students to practice and enhance their mathematical skills.
 
 ## 🌟 Features
 
-- **Random Problem Generation**: Automatically generates quadratic equations with integer roots
+- **Multiple Problem Types**: Switch between quadratic equations and slope-intercept form problems
+- **Random Problem Generation**: Automatically generates problems with integer solutions
 - **Interactive Interface**: Clean, modern UI built with Tailwind CSS
 - **Real-time Feedback**: Immediate validation of answers with visual feedback
 - **Progressive Hints**: Three-level hint system to guide learning
-- **Score Tracking**: Keep track of correct answers
+- **Score Tracking**: Keep track of correct answers for each problem type
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Accessibility**: Keyboard navigation support with Enter key functionality
 
@@ -20,12 +21,24 @@ An interactive web application for practicing quadratic equation solving. This e
 
 ## 📚 Educational Value
 
-This tool helps students:
-- Practice solving quadratic equations
-- Understand the relationship between roots and coefficients
-- Learn the quadratic formula application
+This tool helps students practice:
+
+### Quadratic Equations
+- Solving quadratic equations
+- Understanding the relationship between roots and coefficients
+- Applying the quadratic formula
+- Factoring polynomials
+
+### Slope-Intercept Form
+- Identifying slope and y-intercept in linear equations
+- Understanding linear relationships
+- Graphing lines
+- Real-world applications of linear equations
+
+Both problem types feature:
 - Build confidence through immediate feedback
 - Develop pattern recognition skills
+- Progressive hint system for guided learning
 
 ## 🛠️ Technologies Used
 
@@ -53,16 +66,28 @@ Simply visit the **[live demo](https://jvanderpool-repos.github.io/quadratic_equ
 
 ## 🎯 Usage
 
+1. **Select Problem Type**: Choose between "Quadratic Equations" or "Slope-Intercept Form"
+
+### For Quadratic Equations:
 1. **View the Equation**: A random quadratic equation appears in the format `ax² + bx + c = 0`
 2. **Enter Roots**: Input the two roots (x₁ and x₂) in the provided fields
 3. **Check Answer**: Click "Check Answer" or press Enter after the second input
-4. **Get Feedback**: 
-   - ✅ Correct answers advance to the next problem
-   - ❌ Incorrect answers provide hints and explanations
-5. **Track Progress**: Your score increases with each correct answer
+
+### For Slope-Intercept Form:
+1. **View the Equation**: A random linear equation appears in the format `y = mx + b`
+2. **Enter Values**: Input the slope (m) and y-intercept (b) in the provided fields
+3. **Check Answer**: Click "Check Answer" or press Enter after the second input
+
+### For Both Types:
+- **Get Feedback**: 
+  - ✅ Correct answers advance to the next problem
+  - ❌ Incorrect answers provide hints and explanations
+- **Track Progress**: Your score increases with each correct answer
+- **Use Hints**: Progressive hints help guide you to the solution
 
 ## 📖 Mathematical Background
 
+### Quadratic Equations
 The application generates quadratic equations of the form:
 ```
 ax² + bx + c = 0
@@ -77,9 +102,23 @@ The relationship used:
 - If roots are r₁ and r₂, then the equation is: `(x - r₁)(x - r₂) = 0`
 - Expanding: `x² - (r₁ + r₂)x + (r₁ × r₂) = 0`
 
+### Slope-Intercept Form
+The application generates linear equations of the form:
+```
+y = mx + b
+```
+
+Where:
+- **m** is the slope (integers between -10 and 10)
+- **b** is the y-intercept (integers between -10 and 10)
+- The equation represents a line with:
+  - Rate of change = m (rise/run)
+  - Point of intersection with y-axis = (0, b)
+
 ## 🎨 Customization
 
-To modify the difficulty, adjust the root generation in `assets/js/app.js`:
+### Quadratic Equations
+Modify the difficulty by adjusting the root generation in `assets/js/app.js`:
 ```javascript
 // Current: roots between -10 and 10
 this.root1 = Math.floor(Math.random() * 21) - 10;
@@ -89,6 +128,19 @@ this.root1 = Math.floor(Math.random() * 11) - 5;
 
 // Hard: roots between -20 and 20
 this.root1 = Math.floor(Math.random() * 41) - 20;
+```
+
+### Slope-Intercept Form
+Adjust the difficulty by modifying value ranges in `assets/js/slope-intercept.js`:
+```javascript
+// Current: values between -10 and 10
+this.slope = Math.floor(Math.random() * 21) - 10;
+
+// Easy: values between -5 and 5
+this.slope = Math.floor(Math.random() * 11) - 5;
+
+// Hard: values between -20 and 20
+this.slope = Math.floor(Math.random() * 41) - 20;
 ```
 
 ##  License

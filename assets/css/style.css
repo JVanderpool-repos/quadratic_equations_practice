@@ -1,4 +1,62 @@
-/* Quadratic Equation Solver - Custom Styles */
+/* Math Problem Practice - Custom Styles */
+
+/* Typography */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.success-bounce {
+    animation: bounce 0.5s cubic-bezier(0.36, 0, 0.66, -0.56) both;
+}
+
+.error-shake {
+    animation: shake 0.5s cubic-bezier(0.36, 0, 0.66, -0.56) both;
+}
+
+.correct-animation {
+    animation: correctGlow 1s ease-in-out;
+}
+
+/* Problem Type Transitions */
+#app-container h1,
+#app-container p,
+#equation-display p,
+label[for="x1-input"],
+label[for="x2-input"] {
+    transition: all 0.3s ease-in-out;
+}
+
+#problem-type {
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+@keyframes correctGlow {
+    0% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.6); }
+    100% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.2); }
+}
 
 body {
     font-family: 'Inter', sans-serif;
