@@ -34,7 +34,19 @@ class QuadraticSolver {
      */
     init() {
         this.setupEventListeners();
+        this.setupUI();
         this.generateProblem();
+    }
+
+    /**
+     * Set up the UI for quadratic equations
+     */
+    setupUI() {
+        // Update labels for quadratic form
+        document.querySelector('label[for="x1-input"]').textContent = 'x₁ =';
+        document.querySelector('label[for="x2-input"]').textContent = 'x₂ =';
+        document.querySelector('h1').textContent = 'Quadratic Solver';
+        document.querySelector('#app-container p').textContent = 'Find the roots of the quadratic equation.';
     }
 
     /**
